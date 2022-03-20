@@ -66,4 +66,4 @@ if __name__ == '__main__':
     # no-thread: https://github.com/keras-team/keras/issues/2397#issuecomment-377914683
     # avoid model.predict runs before model initiated
     # To let this run on HEROKU, model.predict should run onece after initialized
-    app.run(threaded=False)
+    app.run(host='0.0.0.0',port='5000', threaded=False)
