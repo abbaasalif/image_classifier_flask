@@ -1,5 +1,5 @@
 import os
-from flask import Flask, request, redirect, url_for, jsonify, Response
+from flask import Flask, request, redirect, url_for, jsonify, Response, render_template
 from werkzeug.utils import secure_filename
 
 from tensorflow.keras.applications.vgg16 import VGG16, preprocess_input, decode_predictions
@@ -8,7 +8,7 @@ import numpy as np
 from PIL import Image
 import io
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder = 'templates')
 model = None
 
 def load_model():
@@ -37,7 +37,7 @@ def upload_file():
                 row = {'label': label, 'probability': float(prob)} # numpy float is not good for json
                 response['predictions'].append(row)
             response['success'] = True
-            return jsonify(response)
+            return render_template('template.html', response = response['predictions'][0]['label'])
 
     return '''
     <!DOCTYPE html>
@@ -55,8 +55,7 @@ def upload_file():
 </div>
 <br/>
     <form method=post enctype=multipart/form-data>
-      <p><input type=file name=file class='form-control'>
-        <br>
+      <p><input type=file name=file class='form-control'></p>
          <input type=submit value=Upload class='btn btn-success'>
     </form>
     '''
