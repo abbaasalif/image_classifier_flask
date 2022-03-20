@@ -40,12 +40,24 @@ def upload_file():
             return jsonify(response)
 
     return '''
-    <!doctype html>
-    <title>Upload new File</title>
-    <h1>Upload new File</h1>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Ai-Like Me Image Classifier</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+<div class="container-fluid p-5 bg-primary text-white text-center">
+  <h3>Ai-Like Image Classifier</h3>
+</div>
+<br/>
     <form method=post enctype=multipart/form-data>
-      <p><input type=file name=file>
-         <input type=submit value=Upload>
+      <p><input type=file name=file class='form-control'>
+        <br>
+         <input type=submit value=Upload class='btn btn-success'>
     </form>
     '''
 
