@@ -37,7 +37,7 @@ def upload_file():
                 row = {'label': label, 'probability': float(prob)} # numpy float is not good for json
                 response['predictions'].append(row)
             response['success'] = True
-            return render_template('template.html', response = response['predictions'][0]['label'])
+            return jsonify(response)
 
     return '''
     <!DOCTYPE html>

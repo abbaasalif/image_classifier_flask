@@ -1,0 +1,80 @@
+2022-03-20 14:58:47.068406: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory
+2022-03-20 14:58:47.068464: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2022-03-20 14:58:48.771907: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory
+2022-03-20 14:58:48.771954: W tensorflow/stream_executor/cuda/cuda_driver.cc:269] failed call to cuInit: UNKNOWN ERROR (303)
+2022-03-20 14:58:48.771979: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (imageclass): /proc/driver/nvidia/version does not exist
+2022-03-20 14:58:48.772248: I tensorflow/core/platform/cpu_feature_guard.cc:151] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-03-20 14:58:49.023962: W tensorflow/core/framework/cpu_allocator_impl.cc:82] Allocation of 411041792 exceeds 10% of free system memory.
+2022-03-20 14:58:49.452910: W tensorflow/core/framework/cpu_allocator_impl.cc:82] Allocation of 411041792 exceeds 10% of free system memory.
+2022-03-20 14:58:49.557429: W tensorflow/core/framework/cpu_allocator_impl.cc:82] Allocation of 411041792 exceeds 10% of free system memory.
+2022-03-20 14:58:51.382801: W tensorflow/core/framework/cpu_allocator_impl.cc:82] Allocation of 411041792 exceeds 10% of free system memory.
+ * Serving Flask app 'app' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://10.1.0.4:5000/ (Press CTRL+C to quit)
+2022-03-20 14:59:06.409271: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory
+2022-03-20 14:59:06.409312: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2022-03-20 14:59:08.159654: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory
+2022-03-20 14:59:08.159702: W tensorflow/stream_executor/cuda/cuda_driver.cc:269] failed call to cuInit: UNKNOWN ERROR (303)
+2022-03-20 14:59:08.159730: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (imageclass): /proc/driver/nvidia/version does not exist
+2022-03-20 14:59:08.159985: I tensorflow/core/platform/cpu_feature_guard.cc:151] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-03-20 14:59:08.417028: W tensorflow/core/framework/cpu_allocator_impl.cc:82] Allocation of 411041792 exceeds 10% of free system memory.
+2022-03-20 14:59:08.857367: W tensorflow/core/framework/cpu_allocator_impl.cc:82] Allocation of 411041792 exceeds 10% of free system memory.
+2022-03-20 14:59:08.966168: W tensorflow/core/framework/cpu_allocator_impl.cc:82] Allocation of 411041792 exceeds 10% of free system memory.
+2022-03-20 14:59:10.827924: W tensorflow/core/framework/cpu_allocator_impl.cc:82] Allocation of 411041792 exceeds 10% of free system memory.
+ * Serving Flask app 'app' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://10.1.0.4:5000/ (Press CTRL+C to quit)
+131.96.222.214 - - [20/Mar/2022 14:59:22] "POST /predict HTTP/1.1" 200 -
+131.96.222.214 - - [20/Mar/2022 14:59:34] "GET /predict HTTP/1.1" 200 -
+131.96.222.214 - - [20/Mar/2022 14:59:34] "GET /favicon.ico HTTP/1.1" 404 -
+131.96.222.214 - - [20/Mar/2022 15:01:18] "POST /predict HTTP/1.1" 200 -
+131.96.222.214 - - [20/Mar/2022 15:01:28] "GET /predict HTTP/1.1" 200 -
+131.96.222.214 - - [20/Mar/2022 15:01:34] "POST /predict HTTP/1.1" 200 -
+131.96.222.214 - - [20/Mar/2022 15:01:38] "GET /predict HTTP/1.1" 200 -
+131.96.222.214 - - [20/Mar/2022 15:01:42] "POST /predict HTTP/1.1" 200 -
+131.96.222.214 - - [20/Mar/2022 15:01:48] "GET /predict HTTP/1.1" 200 -
+131.96.222.214 - - [20/Mar/2022 15:01:53] "POST /predict HTTP/1.1" 200 -
+131.96.222.214 - - [20/Mar/2022 15:01:57] "GET /predict HTTP/1.1" 200 -
+131.96.222.214 - - [20/Mar/2022 15:01:59] "POST /predict HTTP/1.1" 200 -
+131.96.222.214 - - [20/Mar/2022 15:02:00] "GET /predict HTTP/1.1" 200 -
+2022-03-20 15:24:44.896286: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory
+2022-03-20 15:24:44.896354: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2022-03-20 15:24:46.604036: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory
+2022-03-20 15:24:46.604080: W tensorflow/stream_executor/cuda/cuda_driver.cc:269] failed call to cuInit: UNKNOWN ERROR (303)
+2022-03-20 15:24:46.604106: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (imageclass): /proc/driver/nvidia/version does not exist
+2022-03-20 15:24:46.604327: I tensorflow/core/platform/cpu_feature_guard.cc:151] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-03-20 15:24:46.856180: W tensorflow/core/framework/cpu_allocator_impl.cc:82] Allocation of 411041792 exceeds 10% of free system memory.
+2022-03-20 15:24:47.299210: W tensorflow/core/framework/cpu_allocator_impl.cc:82] Allocation of 411041792 exceeds 10% of free system memory.
+2022-03-20 15:24:47.406749: W tensorflow/core/framework/cpu_allocator_impl.cc:82] Allocation of 411041792 exceeds 10% of free system memory.
+2022-03-20 15:24:49.253901: W tensorflow/core/framework/cpu_allocator_impl.cc:82] Allocation of 411041792 exceeds 10% of free system memory.
+ * Serving Flask app 'app' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://10.1.0.4:5000/ (Press CTRL+C to quit)
+131.96.222.214 - - [20/Mar/2022 15:25:03] "GET /predict HTTP/1.1" 200 -
+131.96.222.214 - - [20/Mar/2022 15:25:09] "POST /predict HTTP/1.1" 200 -
+131.96.222.214 - - [20/Mar/2022 15:25:11] "GET /predict HTTP/1.1" 200 -
+131.96.222.214 - - [20/Mar/2022 15:25:19] "POST /predict HTTP/1.1" 200 -
+131.96.222.214 - - [20/Mar/2022 15:27:03] "GET /predict HTTP/1.1" 200 -
+131.96.222.214 - - [20/Mar/2022 15:27:10] "POST /predict HTTP/1.1" 200 -
+131.96.222.214 - - [20/Mar/2022 16:02:12] "GET /predict HTTP/1.1" 200 -
+131.96.222.214 - - [20/Mar/2022 16:02:55] "POST /predict HTTP/1.1" 200 -
+131.96.222.214 - - [20/Mar/2022 16:13:39] "GET /predict HTTP/1.1" 200 -
+131.96.222.214 - - [20/Mar/2022 16:13:47] "POST /predict HTTP/1.1" 200 -
